@@ -112,7 +112,7 @@ the local store is populated with new data only when there is a call to *pull* d
   Otherwise, different pull operations could overwrite the same incremental sync timestamp and your queries
   can return incorrect results.
   
-  The query name needs to be less than or equal to 25 characters, start with an alphabetic character, and only contain alphanumeric characters, dash and underscore. It must pass the regex `^[a-zA-Z][a-zA-Z0-9_-]{0,24}$`.
+  The query name needs to be less than or equal to 25 characters, start with an alphabetic character, and only contain alphanumeric characters, hyphen and underscore. It must pass the regex `^[a-zA-Z][a-zA-Z0-9_-]{0,24}$`.
 
   If the query has a parameter, one way to create a unique query name is to incorporate the parameter value.
   For instance, if you are filtering on userid, your query name could be as follows (in C#):
